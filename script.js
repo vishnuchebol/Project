@@ -165,7 +165,7 @@ fetch("https://api.countrystatecity.in/v1/countries", requestOptions)
       }
   ]
 
-    users.forEach(user => {
+    users2.forEach(user => {
       const card = userCardTemplate.content.cloneNode(true).children[0]
       const header = card.querySelector("[title]")
       const headers =card.querySelector("[data-header]")
