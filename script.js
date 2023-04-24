@@ -9,7 +9,7 @@ let users = []
 
 searchInput.addEventListener("input", e => {
   const value = e.target.value.toLowerCase()
-  users.forEach(user => {
+  users2.forEach(user => {
     const isVisible =
       user.job.toLowerCase().includes(value) 
     user.element.classList.toggle("hide", !isVisible) 
@@ -17,7 +17,7 @@ searchInput.addEventListener("input", e => {
 })
 searchInput2.addEventListener("input", e => {
   const value = e.target.value.toLowerCase()
-      users.forEach(user => { 
+      users2.forEach(user => { 
         const isVisible =
           user.country.toLowerCase().includes(value)
         user.element.classList.toggle("hide", !isVisible)
@@ -27,7 +27,7 @@ searchInput2.addEventListener("input", e => {
 
 searchInput3.addEventListener("input", e => {
   const value = e.target.value.toLowerCase()
-  users.forEach(user => {
+  users2.forEach(user => {
     const isVisible =
       user.time.toLowerCase().includes(value)
     user.element.classList.toggle("hide", !isVisible)
