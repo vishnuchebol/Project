@@ -179,7 +179,6 @@ fetch("https://api.countrystatecity.in/v1/countries", requestOptions)
       requirements.textContent ="REQUIREMENTS:"+ user.requirements;
       work_involved.textContent="WORK INVOLVED:"+user.work_involved
       userCardContainer.append(card)
-      return { job: user.job, country: user.country,time:user.time, element: card }
     })
   
   let h2= document.querySelector("#head");
